@@ -76,6 +76,8 @@ public class multipleBeams extends Application {
     double maxmag = 0.;
     
     int nBeamFiles;
+    String directory;
+    String file_prefix;
     String[] beamFiles = new String[100];
     
     private double rtn_freq() {
@@ -105,34 +107,37 @@ public class multipleBeams extends Application {
         cameraXform.ry.setAngle(120.0);
         cameraXform.rx.setAngle(0.0);
     }
-    private void getBeamFiles() {
+    private void getBeamFiles(String filename) {
+        // first, try to glean the directory name from the filename
+        String[] split_files = utils.split_dir_title(filename);
+        System.out.format("%s       %s%n", split_files[0], split_files[1]);
         try{
-            ///String filename = "gbeam3d.txt";
-            Scanner in = new Scanner(new FileReader("m.txt")); 
-            nBeamFiles = in.nextInt();
+            Scanner in = new Scanner(new FileReader(filename)); 
+            this.nBeamFiles = in.nextInt();
             String dummy = in.nextLine();
             for (int ctr = 0; ctr < nBeamFiles; ctr++) {
-                beamFiles[ctr] = in.nextLine();
+                this.beamFiles[ctr] = split_files[0] + in.nextLine();
             }
             in.close();
         }
         catch (FileNotFoundException e)
         {
-            nBeamFiles = 0;
+            this.nBeamFiles = -1;
         }
     }
     private void read_bp(String filename) {
         try{
-            ///String filename = "gbeam3d.txt";
             Scanner in = new Scanner(new FileReader(filename)); 
             title = in.nextLine();
             nRect = in.nextInt();
+            System.out.format(" Reading beampattern file %s, title = %s, # of rectangles = %d%n",filename,title,nRect);
             if(nRect < 0) {  // flag to add array elements, too
                 nRect = -nRect;
                 nElements = in.nextInt();
                 theta = in.nextDouble();
                 phi = in.nextDouble();
                 frequency = in.nextDouble();
+                int array_type = in.nextInt();
             }
             for(int ctr = 0; ctr < nRect; ctr++)             {  // levels in dB 0 to -300
                 phi0[ctr] = in.nextInt();
@@ -210,8 +215,6 @@ public class multipleBeams extends Application {
         zAxis.setMaterial(blueMaterial);
         axisGroup.getChildren().addAll(xAxis, yAxis, zAxis);
 
-        // read inputs from file
-        getBeamFiles();
         for (int fctr = 0; fctr < nBeamFiles; fctr++) {
             read_bp(beamFiles[fctr]);
 
@@ -443,21 +446,30 @@ public class multipleBeams extends Application {
     
         @Override
     public void start(Stage primaryStage) {
-        buildScene();
-        buildCamera();
-        buildAxes();
-
-        Scene scene = new Scene(root, 2048, 1024, true);
-        scene.setFill(Color.GREY);
-        handleKeyboard(scene, world);
-        handleMouse(scene, world);
-
-        primaryStage.setTitle("3D beam pattern for Frequency " + (int)frequency + " Hz");
-        primaryStage.setTitle(title);
-        primaryStage.setScene(scene);
-        primaryStage.show();
-
-        scene.setCamera(camera);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Input File Name for Multiple-beam display:");
+        String inputfile = sc.nextLine();
+        // read inputs from file
+        getBeamFiles(inputfile);
+        if(this.nBeamFiles >= 0) {
+            buildScene();
+            buildCamera();
+            buildAxes();
+            Scene scene = new Scene(root, 2048, 1024, true);
+            scene.setFill(Color.GREY);
+            handleKeyboard(scene, world);
+            handleMouse(scene, world);
+    
+            primaryStage.setTitle("3D beam pattern for Frequency " + (int)frequency + " Hz");
+            primaryStage.setTitle(title);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+    
+            scene.setCamera(camera);
+        }
+        else {
+            System.out.println(" No Input file found, or error in input file");
+        }
 
     }
 

@@ -130,7 +130,6 @@ public class beam_3d extends Application {
         Scanner sc = new Scanner(System.in);
         System.out.println(" Enter input filename ");
         String filename = sc.nextLine();
-//        while (sc.hasNextLine()) System.out.println(sc.nextLine())
 
         try{
             ///String filename = "gbeam3d.txt";
