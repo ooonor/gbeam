@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ProbDetection()
+comment0.text=\r\n\ Private\ constructor\ to\ prevent\ instantiation\r\n
+comment1.params=active\ inSitu
+comment1.target=java.util.List\ getRocCurveModifiedUrick(boolean,\ boolean)
+comment1.text=\r\n\ Get\ the\ Receiver\ Operating\ (ROC)\ Curve.\ \ \r\n\ This\ is\ the\ Urick\ table,\ modified\ by\ Dave\ Heming\r\n\ @param\ active\ is\ this\ active\ SE?\r\n\ @param\ inSitu\ is\ this\ an\ insitu\ measurement?\r\n\ @return\ xyRoc\ the\ modifed\ Urick\ ROC\ Curve\ Table\r\n
+comment2.params=signalExcess
+comment2.target=double\ signalExcessToProbDetection(double)
+comment2.text=\r\n\ Send\ in\ a\ Signal\ Excess\ (SE)\ value\ and\ get\ back\ a\ Probability\ of\ Detection\ (PD)\ value\ \r\n\ @param\ signalExcess\ Signal\ Excess\ in\ dB\r\n\ @param\ active\ is\ this\ active\ SE?\r\n\ @param\ inSitu\ is\ this\ an\ inSitu\ (measured)\ SE\r\n\ @return\ probability\ of\ detection\ (pd)\r\n
+comment3.params=signalExcess\ active\ inSitu
+comment3.target=double\ signalExcessToProbDetection(double,\ boolean,\ boolean)
+comment4.params=seData\ active\ inSitu
+comment4.target=java.util.List\ signalExcessToProbDetectionCurve(java.util.List,\ boolean,\ boolean)
+comment4.text=\r\n\ Send\ in\ a\ Signal\ Excess\ (SE)\ value\ and\ get\ back\ a\ Probability\ of\ Detection\ (PD)\ value\r\n\ @param\ seData\ SE\ vs\ Range\ \r\n\ @param\ active\ flag\ for\ active\ calculations\r\n\ @param\ inSitu\ flag\ for\ in-situ\ (measured)\ SE\r\n\ @return\ probability\ of\ detection\ (Pd)\ curve\r\n
+comment5.params=pd\ active\ inSitu
+comment5.target=double\ probDetectionToSEThreshold(double,\ boolean,\ boolean)
+comment5.text=\r\n\ Compute\ the\ SE\ Threshold\ based\ on\ a\ Probability\ of\ Detection\ (0\ -\ 1.0)\r\n\ @param\ pd\ the\ Probability\ of\ detection\ (between\ 0\ and\ 1)\r\n\ @param\ active\ Is\ this\ an\ active\ sensor?\r\n\ @param\ inSitu\ Is\ this\ measured\ PD?\r\n\ @return\ the\ SE\ threshold\r\n
+numComments=6

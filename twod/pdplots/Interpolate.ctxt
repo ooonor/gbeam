@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Interpolate()
+comment0.text=\r\n\ Private\ constructor\ to\ prevent\ instantiation.\r\n
+comment1.params=numPoints\ points\ xin\ extrapolate
+comment1.target=double\ interp(int,\ XYPoint[],\ double,\ boolean)
+comment1.text=\r\n\ A\ simple\ linear\ interpolation.\r\n\ \r\n\ @param\ numPoints\r\n\ \ \ \ \ \ \ \ \ \ \ The\ number\ of\ points\ in\ the\ XY\ curve\r\n\ @param\ points\r\n\ \ \ \ \ \ \ \ \ \ \ The\ XY\ curve\r\n\ @param\ xin\r\n\ \ \ \ \ \ \ \ \ \ \ The\ new\ X\ value\r\n\ @param\ extrapolate\r\n\ \ \ \ \ \ \ \ \ \ \ True\=Extrapolate\ off\ the\ ends\ of\ the\ curve,\ using\ the\ last\r\n\ \ \ \ \ \ \ \ \ \ \ gradient;\ False\=Use\ the\ min\ or\ max\ value\ off\ the\ ends\ of\ the\r\n\ \ \ \ \ \ \ \ \ \ \ curve\r\n\ @return\ The\ interpolated\ Y\ value\r\n
+comment2.params=numPoints\ points\ yin
+comment2.target=double\ interpyx(int,\ XYPoint[],\ double)
+comment2.text=\r\n\ A\ simple\ linear\ interpolation\ which\ interpolates\ for\ x\ in\ an\ x-y\ array\ whose\ y\ values\ increase\ with\ array\ index.\r\n\ \r\n\ @param\ numPoints\r\n\ \ \ \ \ \ \ \ \ \ \ The\ number\ of\ points\ in\ the\ XY\ curve\r\n\ @param\ points\r\n\ \ \ \ \ \ \ \ \ \ \ The\ XY\ curve\r\n\ @param\ yin\r\n\ \ \ \ \ \ \ \ \ \ \ The\ new\ Y\ value\r\n\ @return\ The\ interpolated\ X\ value\r\n
+comment3.params=xIn\ xyCurve
+comment3.target=double\ interp(double,\ java.util.List)
+comment3.text=\r\n\ Interpolate\ into\ a\ List<XYPoint>\ array\r\n\ @param\ xIn\ input\ X\ value\ (to\ interpolate\ to)\r\n\ @param\ xyCurve\ Input\ curve\r\n\ @return\ interpolated\ y\ value\r\n
+numComments=4

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=x\ y
+comment0.target=XYPoint(double,\ double)
+comment0.text=\r\n\ Default\ Constructor.\r\n\ @param\ x\ The\ X\ value\r\n\ @param\ y\ The\ Y\ value\r\n
+comment1.params=
+comment1.target=double\ getX()
+comment1.text=\r\n\ Get\ the\ x\ value\ of\ the\ point.\r\n\ @return\ double\r\n
+comment2.params=
+comment2.target=double\ getY()
+comment2.text=\r\n\ Get\ the\ y\ value\ of\ the\ point.\r\n\ @return\ double\r\n
+numComments=3

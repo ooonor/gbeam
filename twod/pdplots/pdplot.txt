@@ -1,0 +1,8 @@
+ 1 0 1 1
+3
+PD vs SE for Ideal and Actual Arrays
+Array MFTA
+11Oct 2015
+1.5
+false
+-1
