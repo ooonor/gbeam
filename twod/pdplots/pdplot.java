@@ -229,10 +229,4 @@ public class pdplot
         int ier_inputs = pdp.get_inputs("pdplot.txt");
         int ier_disp = pdp.display_panels();
     }
-    public static void main_doesnt_work()
-    {
-        pdplot_utils pdp = new pdplot_utils() ;  //("pdplot.txt");
-        int ier_inputs = pdp.get_inputs("pdplot.txt");
-        int ier_display = pdp.display(-1,-1);
-    }
 }
