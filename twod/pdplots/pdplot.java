@@ -39,6 +39,32 @@ class pdplot_utils
     public pdplot_utils() {
         this.flags = new int[4];
     }
+    public int prompt_for_inputs() {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter Title for Plots:");
+        this.n_title_lines = 1;
+        this.title_lines = new String[this.n_title_lines];
+        this.title_lines[0] = in.nextLine();
+        System.out.println("Enter 2 input flags separated by spaces.  First for PD vs. SE, next for PD vs PD: ");
+        this.flags[0] = in.nextInt();
+        this.flags[1] = in.nextInt();
+        System.out.println("Enter degradation in dB: ");
+        this.degradation = in.nextDouble();
+        System.out.println("Enter 1 for active, 0 for passive: ");
+        int iact = in.nextInt();
+        this.active = false;
+        if(iact==1)this.active = true;
+        this.npts = -1;
+        List<XYPoint> xy = ProbDetection.getRocCurveModifiedUrick(this.active,false);
+        this.npts = xy.size();
+        this.pdse = new double[this.npts];
+        this.pd = new double[this.npts];
+        for (int i = 0; i < this.npts; i++ ) { //this.npts; i++) {
+            this.pdse[i] = xy.get(i).getX();
+            this.pd[i] = xy.get(i).getY();
+        }
+        return(0);
+    }
     public int get_inputs(String filename){
         try{
             Scanner in = new Scanner(new FileReader(filename)); 
@@ -185,6 +211,19 @@ class pdplot_utils
 }
 public class pdplot
 {
+    public static void main_prompt_for_inputs() {
+        pdplot_utils pdp = new pdplot_utils() ;  //("pdplot.txt");
+        int ier_inputs = pdp.prompt_for_inputs();
+        int ier_disp = pdp.display_panels();
+    }
+    public static void main_prompt_for_input_file() {
+        pdplot_utils pdp = new pdplot_utils() ;  //("pdplot.txt");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Input File Name:");
+        String inputfile  = sc.nextLine();
+        int ier_inputs = pdp.get_inputs("pdplot.txt");
+        int ier_disp = pdp.display_panels();
+    }
     public static void main() {
         pdplot_utils pdp = new pdplot_utils() ;  //("pdplot.txt");
         int ier_inputs = pdp.get_inputs("pdplot.txt");
