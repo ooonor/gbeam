@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.params=
+comment0.target=double\ rtn_freq()
+comment1.params=
+comment1.target=void\ buildScene()
+comment10.params=
+comment10.target=void\ main()
+comment10.text=\r\n\ The\ main()\ method\ is\ ignored\ in\ correctly\ deployed\ JavaFX\ application.\r\n\ main()\ serves\ only\ as\ fallback\ in\ case\ the\ application\ can\ not\ be\r\n\ launched\ through\ deployment\ artifacts,\ e.g.,\ in\ IDEs\ with\ limited\ FX\r\n\ support.\ NetBeans\ ignores\ main().\r\n\r\n\ @param\ args\ the\ command\ line\ arguments\r\n
+comment2.params=
+comment2.target=void\ buildCamera()
+comment3.params=
+comment3.target=void\ buildAxes()
+comment4.params=scene\ root
+comment4.target=void\ handleMouse(javafx.scene.Scene,\ javafx.scene.Node)
+comment5.params=me
+comment5.target=void\ handle(javafx.scene.input.MouseEvent)
+comment6.params=me
+comment6.target=void\ handle(javafx.scene.input.MouseEvent)
+comment7.params=scene\ root
+comment7.target=void\ handleKeyboard(javafx.scene.Scene,\ javafx.scene.Node)
+comment8.params=event
+comment8.target=void\ handle(javafx.scene.input.KeyEvent)
+comment9.params=primaryStage
+comment9.target=void\ start(javafx.stage.Stage)
+numComments=11
