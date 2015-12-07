@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=scene
+comment0.target=javafx.scene.PerspectiveCamera\ addCamera(javafx.scene.Scene)
+comment1.params=
+comment1.target=void\ main()
+comment2.params=primaryStage
+comment2.target=void\ start(javafx.stage.Stage)
+comment3.params=event
+comment3.target=void\ handle(javafx.scene.input.MouseEvent)
+comment4.params=event
+comment4.target=void\ handle(javafx.scene.input.MouseEvent)
+numComments=5
