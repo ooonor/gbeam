@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ buildScene()
+comment1.params=
+comment1.target=void\ buildCamera()
+comment2.params=
+comment2.target=void\ buildAxes()
+comment3.params=scene\ root
+comment3.target=void\ handleMouse(javafx.scene.Scene,\ javafx.scene.Node)
+comment4.params=me
+comment4.target=void\ handle(javafx.scene.input.MouseEvent)
+comment5.params=me
+comment5.target=void\ handle(javafx.scene.input.MouseEvent)
+comment6.params=scene\ root
+comment6.target=void\ handleKeyboard(javafx.scene.Scene,\ javafx.scene.Node)
+comment7.params=event
+comment7.target=void\ handle(javafx.scene.input.KeyEvent)
+comment8.params=primaryStage
+comment8.target=void\ start(javafx.stage.Stage)
+comment9.params=
+comment9.target=void\ main()
+comment9.text=\r\n\ The\ main()\ method\ is\ ignored\ in\ correctly\ deployed\ JavaFX\ application.\r\n\ main()\ serves\ only\ as\ fallback\ in\ case\ the\ application\ can\ not\ be\r\n\ launched\ through\ deployment\ artifacts,\ e.g.,\ in\ IDEs\ with\ limited\ FX\r\n\ support.\ NetBeans\ ignores\ main().\r\n\r\n\ @param\ args\ the\ command\ line\ arguments\r\n
+numComments=10
