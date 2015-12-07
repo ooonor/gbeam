@@ -212,12 +212,12 @@ class pdplot_utils
 public class pdplot
 {
     public static void main_prompt_for_inputs() {
-        pdplot_utils pdp = new pdplot_utils() ;  //("pdplot.txt");
+        pdplot_utils pdp = new pdplot_utils() ; 
         int ier_inputs = pdp.prompt_for_inputs();
         int ier_disp = pdp.display_panels();
     }
     public static void main_prompt_for_input_file() {
-        pdplot_utils pdp = new pdplot_utils() ;  //("pdplot.txt");
+        pdplot_utils pdp = new pdplot_utils() ; 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Input File Name:");
         String inputfile  = sc.nextLine();
@@ -225,7 +225,7 @@ public class pdplot
         int ier_disp = pdp.display_panels();
     }
     public static void main() {
-        pdplot_utils pdp = new pdplot_utils() ;  //("pdplot.txt");
+        pdplot_utils pdp = new pdplot_utils() ; 
         int ier_inputs = pdp.get_inputs("pdplot.txt");
         int ier_disp = pdp.display_panels();
     }
