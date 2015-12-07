@@ -1,0 +1,22 @@
+50 1.
+c:\gbeam\kplots\sbir_big2\
+3
+k-plotMain.t1.s1.m1.dat
+k-plotMain.t2.s1.m1.dat
+k-plotMain.t3.s1.m1.dat
+4
+e1\
+e2\
+e3\
+e4\
+3
+z1\
+z2\
+z3\
+2
+s19\
+s21\
+s23\
+s20\
+s22\
+s24\

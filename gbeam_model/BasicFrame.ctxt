@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=x\ th\ y\ yFull\ n\ title\ theta\ phi\ frequency
+comment0.target=BasicFrame(double[],\ double[],\ double[][],\ double[][],\ int,\ java.lang.String,\ double,\ double,\ double)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ BasicFrame\r\n
+comment1.params=g
+comment1.target=void\ paint(java.awt.Graphics)
+comment1.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n
+numComments=2

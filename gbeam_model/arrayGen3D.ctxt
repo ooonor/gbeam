@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=z\ zAll\ nAll
+comment0.target=int\ findElement(double,\ double[],\ int)
+comment1.params=arrayWid\ arrayHgt\ radius\ maxF\ soundspeed
+comment1.target=void\ build_hull_array(double,\ double,\ double,\ double,\ double)
+comment2.params=soundSpeed
+comment2.target=void\ build_line_array(double)
+comment3.params=nStaves\ nPerStave\ radius\ maxFreq\ soundspeed
+comment3.target=void\ build_cylinder(int,\ int,\ double,\ double,\ double)
+comment4.params=
+comment4.target=void\ write_array_display_file()
+comment5.params=iap\ nOut\ maxFreq
+comment5.target=void\ write_gbeam_wrapper_file(int,\ int,\ double)
+comment6.params=
+comment6.target=void\ main()
+numComments=7

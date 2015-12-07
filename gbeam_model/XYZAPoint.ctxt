@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ XYZAPoint()
+comment0.text=\r\n\ Default\ Constructor.\r\n\ @param\ x\ The\ X\ value\r\n\ @param\ y\ The\ Y\ value\r\n
+comment1.params=x\ y\ z\ a\ out
+comment1.target=void\ XYZAPoint(double,\ double,\ double,\ int,\ int)
+comment2.params=
+comment2.target=double\ getX()
+comment2.text=\r\n\ Get\ the\ x\ value\ of\ the\ point.\r\n\ @return\ double\r\n
+comment3.params=
+comment3.target=double\ getY()
+comment3.text=\r\n\ Get\ the\ y\ value\ of\ the\ point.\r\n\ @return\ double\r\n
+numComments=4

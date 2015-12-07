@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=lmn\ isteer\ idelay\ xpos\ ypos\ zpos\ dela\ rshad
+comment0.target=Gbeam(int,\ int,\ int,\ double[],\ double[],\ double[],\ double[],\ double[])
+comment0.text=\r\n\ \ \ \ public\ Gbeam(int\ lmn,\ int\ isteer,\ int\ idelay,\ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ double[]\ xpos,\ double[]\ ypos,\ double[]\ zpos,\ double[]\ rshad)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ this.lmn\ \=\ lmn;\r\n\ \ \ \ \ \ \ \ this.isteer\ \=\ isteer;\r\n\ \ \ \ \ \ \ \ this.idelay\ \=\ idelay;\r\n\ \ \ \ \ \ \ \ this.xpos\ \=\ xpos;\r\n\ \ \ \ \ \ \ \ this.ypos\ \=\ ypos;\r\n\ \ \ \ \ \ \ \ this.zpos\ \=\ zpos;\r\n\ \ \ \ \ \ \ \ for\ (int\ i\ \=\ 0;\ i\ <\ lmn;\ i++)dela[i]\ \=\ 0.;\r\n\ \ \ \ \ \ \ \ this.rshad\ \=\ rshad;\r\n\ \ \ \ }\r\n
+comment1.params=xpos\ ypos\ zpos
+comment1.target=void\ gbeam_updatePos(double[],\ double[],\ double[])
+comment2.params=theta\ phi\ rzero\ wlamda
+comment2.target=double\ get_gbsum(double,\ double,\ double,\ double)
+numComments=3
